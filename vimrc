@@ -9,6 +9,7 @@ set shiftwidth=2
 set smartindent
 set expandtab
 set autochdir
+set hlsearch
 
 " window stuff
 set winminheight=0
