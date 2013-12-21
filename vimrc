@@ -10,6 +10,8 @@ set smartindent
 set expandtab
 set autochdir
 set hlsearch
+set incsearch
+set ruler
 
 " window stuff
 set winminheight=0
@@ -24,3 +26,13 @@ imap <C-K> <ESC><C-K>
 " fast test reruns
 nmap ,t :w<CR>:!<UP><CR>
 imap ,t <ESC>,t
+
+" paste toggle
+set pastetoggle=<C-O>
+
+" pulled from $GOROOT/misc/vim/readme.txt
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
