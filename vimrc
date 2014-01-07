@@ -1,5 +1,3 @@
-syntax enable
-
 " tab completion
 imap <tab> <C-P>
 
@@ -23,3 +21,9 @@ imap <C-K> <ESC><C-K>
 " fast test reruns
 nmap ,t :w<CR>:!<UP><CR>
 imap ,t <ESC>,t
+
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
