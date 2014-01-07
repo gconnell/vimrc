@@ -13,3 +13,4 @@ function _cool_hist {
 export -f _cool_hist
 export PROMPT_COMMAND=_cool_hist
 
+source ~/scripts/aliases
