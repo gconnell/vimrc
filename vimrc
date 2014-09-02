@@ -6,11 +6,13 @@ set tabstop=2
 set shiftwidth=2
 set smartindent
 set expandtab
-set autochdir
 set hlsearch
 set incsearch
 set ruler
 set smartcase
+
+" the following replaces 'set autochdir'
+autocmd BufEnter * silent! lcd %:p:h
 
 " window stuff
 set winminheight=0
