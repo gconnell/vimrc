@@ -10,7 +10,7 @@ set autochdir
 set hlsearch
 set incsearch
 set ruler
-set ignorecase
+set smartcase
 
 " window stuff
 set winminheight=0
