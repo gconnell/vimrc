@@ -1,5 +1,3 @@
-syntax enable
-
 " tab completion
 imap <tab> <C-P>
 
@@ -31,7 +29,7 @@ imap ,t <ESC>,t
 " paste toggle
 set pastetoggle=<C-O>
 
-" pulled from $GOROOT/misc/vim/readme.txt
+" Go syntax
 filetype off
 filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
