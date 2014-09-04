@@ -21,7 +21,13 @@ git pull
 
 if [ ! -f ~/scripts/aliases ]; then
   mkdir -p ~/scripts
-  cp ~/vimrc/aliases ~/scripts/aliases
+  ln -s ~/vimrc/aliases ~/scripts/aliases
 fi
-source ~/scripts/aliases
+if [ ! -f ~/.bashrc ]; then
+  ln -s ~/vimrc/bashrc ~/.bashrc
+fi
+if [ ! -f ~/.vimrc ]; then
+  ln -s ~/vimrc/vimrc ~/.vimrc
+fi
 
+source ~/scripts/aliases
