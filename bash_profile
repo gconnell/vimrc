@@ -16,6 +16,9 @@ function _cool_hist {
 export -f _cool_hist
 export PROMPT_COMMAND=_cool_hist
 
-if [ -f ~/scripts/aliases ]; then
-  source ~/scripts/aliases
+if [ ! -f ~/scripts/aliases ]; then
+  mkdir -p ~/scripts
+  cp ~/vimrc/aliases ~/scripts/aliases
 fi
+source ~/scripts/aliases
+
