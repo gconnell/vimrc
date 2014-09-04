@@ -1,0 +1,5 @@
+alias apt-get='sudo apt-get'
+alias grep='grep --color=auto'
+alias vim='vim -o'
+alias k='kill %'
+alias sd='cd ~/go/src/bitbucket.org/cleverduck/'
