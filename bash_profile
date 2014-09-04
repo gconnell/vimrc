@@ -19,3 +19,5 @@ export PROMPT_COMMAND=_cool_hist
 if [ -f ~/scripts/aliases ]; then
   source ~/scripts/aliases
 fi
+cd ~/vimrc
+git pull
