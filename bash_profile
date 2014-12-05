@@ -16,6 +16,7 @@ export PROMPT_COMMAND=_cool_hist
 
 cd ~/vimrc
 git pull
+cd ~/
 
 if [ ! -f ~/scripts/aliases ]; then
   mkdir -p ~/scripts
