@@ -1,8 +1,9 @@
-export GOROOT="$HOME/GoSrc"
+export GOROOT="/usr/local/go"
 export GOPATH="$HOME/go"
 export GOBIN="$GOROOT/bin"
-export PATH="$GOBIN:$PATH"
+export PATH="$GOBIN:$PATH:~/scripts:~/devtools/bin"
 export EDITOR="vim"
+export GOROOT_BOOTSTRAP=/Users/gconnell/GoSrc1.4/
 
 alias vim='vim -o'
 
@@ -14,9 +15,7 @@ function _cool_hist {
 export -f _cool_hist
 export PROMPT_COMMAND=_cool_hist
 
-cd ~/vimrc
-git pull
-cd ~/
+(cd ~/vimrc && git pull) &
 
 if [ ! -f ~/scripts/aliases ]; then
   mkdir -p ~/scripts

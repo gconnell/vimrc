@@ -9,6 +9,7 @@ set expandtab
 set hlsearch
 set incsearch
 set ruler
+set ignorecase  " needed for smartcase
 set smartcase
 
 " the following replaces 'set autochdir'
@@ -34,6 +35,6 @@ set pastetoggle=<C-O>
 " Go syntax
 filetype off
 filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
+set runtimepath+=/Users/gconnell/GoSrc1.4/misc/vim
 filetype plugin indent on
 syntax on
