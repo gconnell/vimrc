@@ -15,7 +15,7 @@ function _cool_hist {
 export -f _cool_hist
 export PROMPT_COMMAND=_cool_hist
 
-(cd ~/vimrc && git pull) &
+(cd ~/vimrc && git pull >/dev/null 2>/dev/null) &
 
 if [ ! -f ~/scripts/aliases ]; then
   mkdir -p ~/scripts
