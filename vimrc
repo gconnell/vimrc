@@ -11,6 +11,7 @@ set incsearch
 set ruler
 set ignorecase  " needed for smartcase
 set smartcase
+set autoread
 
 " the following replaces 'set autochdir'
 autocmd BufEnter * silent! lcd %:p:h
