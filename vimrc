@@ -39,3 +39,4 @@ filetype plugin indent off
 set runtimepath+=/Users/gconnell/GoSrc1.4/misc/vim
 filetype plugin indent on
 syntax on
+au BufWritePost *.go !gofmt -w %
