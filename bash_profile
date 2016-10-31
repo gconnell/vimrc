@@ -1,4 +1,4 @@
-export GOROOT="/usr/local/go"
+export GOROOT="$HOME/GoSrc"
 export GOPATH="$HOME/go"
 export GOBIN="$GOROOT/bin"
 export PATH="$GOBIN:$PATH:~/scripts:~/devtools/bin"
@@ -17,15 +17,18 @@ export PROMPT_COMMAND=_cool_hist
 
 (cd ~/vimrc && git pull >/dev/null 2>/dev/null) &
 
-if [ ! -f ~/scripts/aliases ]; then
+if [ ! -e ~/scripts/aliases ]; then
   mkdir -p ~/scripts
   ln -s ~/vimrc/aliases ~/scripts/aliases
 fi
-if [ ! -f ~/.bashrc ]; then
+if [ ! -e ~/.bashrc ]; then
   ln -s ~/vimrc/bashrc ~/.bashrc
 fi
-if [ ! -f ~/.vimrc ]; then
+if [ ! -e ~/.vimrc ]; then
   ln -s ~/vimrc/vimrc ~/.vimrc
+fi
+if [ ! -e ~/.vim ]; then
+  ln -s ~/vimrc/dotvim ~/.vim
 fi
 
 source ~/scripts/aliases
