@@ -1,4 +1,6 @@
 alias apt-get='sudo apt-get'
+alias ls='ls --color=auto'
+alias egrep='egrep --color=auto'
 alias grep='grep --color=auto'
 alias vim='vim -o'
 alias k='kill %'
